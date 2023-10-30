@@ -1,0 +1,607 @@
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+html, body
+	height: 100%
+
+body
+	font-size: 1em
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	opacity: 1
+	font-family: $roboto
+	font-weight: 200
+	color: #333
+	background: $white
+	// max-width: 1623px
+	margin: 0 auto
+	
+footer.cookie 
+	margin-bottom: 130px
+
+h1 
+	font-size: 3.4375em
+	font-weight: 700
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.09
+	letter-spacing: normal
+h2 
+	font-size: 2.5em
+	font-weight: 300
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.25
+	letter-spacing: normal
+	text-align: center
+	text-transform: uppercase
+	margin-bottom: 17px
+	span 
+		display: block
+	strong 
+		font-weight: 700
+	& + p 
+		font-size: 1.5em
+		font-weight: 300
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.25
+		letter-spacing: normal
+		text-align: center
+		strong 
+			font-weight: 700
+h3 
+	&.title 
+		font-size: 2.5em
+		font-weight: 300
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.25
+		letter-spacing: normal
+		margin-bottom: 14px
+		text-transform: uppercase
+		strong 
+			font-weight: 700
+
+h1.title,
+span.h3,
+h3 
+	font-size: 2.5em
+	font-weight: 200
+	line-height: 45px
+	margin-top: 25px
+	display: block
+	margin-bottom: 34px
+	text-transform: uppercase
+
+
+h3.title-green
+	font-family: $roboto
+	font-size: 20px
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.5
+	letter-spacing: normal
+	color: #36a59d
+	margin-bottom: 16px
+
+
+span.h4 
+	font-size: 2.81em
+	line-height: 1.11
+	font-weight: 200
+	margin: 0
+	display: block
+
+
+p
+	font-family: $roboto
+	font-size: 1.125em
+	line-height: 1.45
+	margin: 0
+	margin-bottom: 23px
+	
+	&.small 
+		font-size: 1em
+		font-weight: 300
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.75
+		letter-spacing: normal
+		text-align: center
+ul 
+	list-style: none
+
+img 
+	max-width: 100%
+	max-height: 100%
+
+a 
+	text-decoration: none
+
+b 
+	font-weight: 600
+
+form 
+	font-family: 'Roboto', sans-serif
+	input::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+		color: $black
+	input::-moz-placeholder  /* Firefox 19+ */
+		color: $black
+	input:-ms-input-placeholder  /* IE 10+ */
+		color: $black
+	input:-moz-placeholder  /* Firefox 18- */
+		color: $black
+	textarea::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+		color: $black
+	textarea::-moz-placeholder  /* Firefox 19+ */
+		color: $black
+	textarea:-ms-input-placeholder  /* IE 10+ */
+		color: $black
+	textarea:-moz-placeholder  /* Firefox 18- */
+		color: $black
+
+	input.error,
+	textarea.error
+		box-shadow: 0px 0px 0px 2px $error_color
+
+	input:not([type=checkbox]),
+	textarea
+		background: $white
+		font-size: 0.875em
+		border: 0
+		border-radius: 0
+		width: 100%
+		font-weight: 400
+		display: block
+
+		font-family: $roboto
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.86
+		letter-spacing: normal
+		color: $light-green
+
+	input:not([type=checkbox])
+		padding: 17px 20px 9px
+		margin-bottom: 26px
+	textarea
+		padding: 16px 19px
+		margin-bottom: 8px
+		min-height: 91px
+		resize: none
+
+	label 
+		padding-left: 0
+		display: block
+		color: #000
+		a 
+			transition: all .3s
+			color: #000
+			text-decoration: underline
+			&:hover
+				color: $white
+
+	input[type="checkbox"].error + .position-relative
+		color: $white
+		&:before 
+			box-shadow: 0px 0px 0px 2px $white
+		a 
+			color: $white
+	input[type="checkbox"] + .position-relative
+		font-size: 0.875em
+		&:before 
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			width: 14px
+			height: 14px
+			background: $white
+			margin-right: 10px
+			position: absolute
+			top: 2px
+			left: 0
+			
+	input[type="checkbox"]:checked  + .position-relative
+		&:after 
+			content: '\2713'
+			position: absolute
+			top: 0
+			left: 1px
+
+	input[type='submit']
+		background: $black
+		font-size: 0.875em
+		text-align: center
+		color: $white
+		border-radius: 26px
+		min-width: 132px
+		height: 39px
+		padding: 0
+		transition: all .3s
+		&:hover
+			cursor: pointer
+			border: solid 2px $black
+	button[type='submit']:hover
+		background-color: $white
+		color: $black
+	label
+		position: relative
+		&.error
+			color: $white
+			position: absolute
+			font-size: 14px
+			margin-top: 5px
+			bottom: -21px
+	.field 
+		position: relative
+		&.group 
+			width: 100%
+			display: flex 
+			justify-content: space-between
+			column-gap: 26px
+			&>div
+				width: calc(50% - 13px)
+		&.checkbox
+			font-size: 1em
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-top: 18px
+
+			.left 
+				position: relative
+				top: 18px
+			label 
+				padding: 0
+				display: flex 
+				align-items: center
+				color: $white
+				input[type="checkbox"]
+					margin: 0
+					margin-right: 10px
+					position: relative
+					top: -1px
+				span 
+					display: inline-block
+					margin-right: 5px
+				a 
+					color: $white
+					display: inline-block
+					margin-left: 5px
+					&:hover 
+						color: $black
+				& + label 
+					margin-top: 14px
+
+	button[type="submit"]
+		padding: 7px 15px 5px
+		width: 109px
+
+.menu-btn
+	background: transparent
+	padding: 0
+	border: 0
+	outline: none
+	margin: 0
+
+	&.active 
+		.line 
+			margin: 0 auto
+			background-color: $white
+			&:first-child
+				display: none
+			&:nth-child(2)
+				transform: rotate(-45deg)	
+			&:last-child
+				transform: rotate(45deg)
+				position: relative
+				top: -3px
+	.line 
+		display: block
+		height: 3px
+		width: 34px
+		background-color: $white
+		border-radius: 10px
+		margin: 0 auto 6px
+		transition: all .3s
+		&:last-child 
+			margin-bottom: 0
+.block-sale
+	font-size: 1.5625em
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	letter-spacing: normal
+	line-height: 2.4
+	color: $white
+	text-align: left
+	background: url('../img/icon/group-4.png') no-repeat center center / 100%
+	span 
+		display: block
+	.title 
+		line-height: 1
+	.price 
+		font-size: 66px
+		line-height: 0.91
+		i 
+			font-size: 38px
+			font-style: normal
+
+	.sub
+		text-align: right
+		line-height: 1
+		margin-right: 10px
+.social
+	padding: 0
+	margin: 0
+	li 
+		display: inline-block
+		vertical-align: middle
+		margin-right: 21px
+		&:last-child
+			margin-right: 0
+
+table 
+	text-align: center
+	border: 1px solid #d0d0d0
+	padding: 0
+	margin: 0
+	width: 100%
+	thead
+		th 
+			background-color: #36a59d
+			font-size: 1.25em
+			font-weight: bold
+			font-stretch: normal
+			font-style: normal
+			line-height: 2.85
+			letter-spacing: normal
+			color: $white
+			padding: 11px 5px 9px
+			text-align: center
+			text-transform: uppercase
+			border-right: 1px solid #d0d0d0
+			border-bottom: 1px solid #d0d0d0
+			width: 188px
+			&:last-child
+				border-right: 0
+
+	tbody 
+		tr 
+			&:last-child
+				td 
+					border-bottom: 0
+		td 
+			font-size: 1.25em
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 2.85
+			letter-spacing: normal
+			color: $light-green
+			text-align: center
+			padding: 10px 5px
+			border-right: 1px solid #d0d0d0
+			border-bottom: 1px solid #d0d0d0
+			&:last-child
+				border-right: 0
+.btn 
+	border: none
+	outline: none
+	font-size: 1em
+	display: inline-block
+	transition: all .3s
+	&:hover 
+		cursor: pointer
+.btn-error 
+	border-radius: 26px
+	font-size: 0.875em
+	background-image: linear-gradient(to bottom, #fb7a00, #f85700)
+	color: #fff
+	border: none
+	line-height: normal
+	display: inline-block
+	padding: 11px 28px
+	cursor: pointer
+	outline: none
+	transition: all .3s
+	&:hover
+		background-image: linear-gradient(to top, #fb7a00, #f85700)
+.btn-red 
+	border-radius: 26px
+	background-image: linear-gradient(to right, #ff0060 0%, #db3775 97%)
+	font-size: 1.25em
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.3
+	letter-spacing: normal
+	text-align: center
+	color: $white
+	max-width: 223px
+	width: 100%
+	padding: 8px 5px
+	border: solid 2px transparent
+	&:hover 
+		border-color: $red
+		background: transparent
+		color: $red
+
+.btn-white
+	padding: 10px 36px 12px 37px
+	border-radius: 26px
+	border: solid 2px transparent
+	background-color: $white
+	font-size: 1.25em
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.3
+	letter-spacing: normal
+	text-align: center
+	color: $red
+	&:hover 
+		border-color: $white
+		background: transparent
+		color: $white
+
+.btn-border 
+	padding: 11px 45px 12px
+	border-radius: 26px
+	border: solid 2px #fc0562
+	font-size: 1.25em
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.3
+	letter-spacing: normal
+	text-align: center
+	color: $red
+	transition: all .3s
+	&:hover 
+		background-image: linear-gradient(to right, #ff0060 0%, #db3775 97%)
+		color: $white
+
+.btn-black 
+	padding: 5px 29px 8px
+	border-radius: 26px
+	background-color: #000
+	font-size: 1em
+	font-weight: normal
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.63
+	letter-spacing: normal
+	text-align: center
+	color: $white
+
+.mobile.fixed-button
+	display: none
+	
+.display-mobile
+	display: none
+
+.t-padding
+	padding-top: 79px
+.b-padding
+	padding-bottom: 95px
+
+.lg-outer 
+	.lg-content
+		max-width: 1315px
+		margin: 0 auto
+	.lg-item
+		max-width: calc(100% - 200px)
+		margin: 0 auto
+		left: 0
+		right: 0
+
+.lg-content
+	.lg-next, 
+	//.lg-pager-outer, 
+	.lg-prev
+		padding: 0
+		font-size: 0
+		background: transparent
+		&::after 
+			content: none
+		&::before 
+			content: ''
+			display: block
+			background: url('../img/sprite/spritesheet.png') no-repeat -76px -63px
+			width: 29px
+			height: 59px
+	.lg-next
+		&::before 
+			background-position: -105px -63px
+
+// .slick-next
+// 	right: 28px
+// .slick-prev
+// 	left: 28px
+// .slick-next,
+// .slick-prev
+// 	z-index: 4
+// 	&::before
+// 		content: none
+// 	background: url('../img/sprite/spritesheet.png') no-repeat -105px -63px
+// 	width: 29px
+// 	height: 59px
+// 	&:hover 
+// 		background-image: url('../img/sprite/spritesheet.png')
+// 		background-position: -105px -63px
+// .slick-prev
+// 	background: url('../img/sprite/spritesheet.png') no-repeat -76px -63px
+// 	&:hover 
+// 		background-image: url('../img/sprite/spritesheet.png')
+// 		background-position: -76px -63px
+
+
+.lg-backdrop
+	background: rgba(0, 0, 0, .9)
+.lg-has-thumb 
+	.lg-toolbar + .lg-components
+		display: none !important
+// .lg-toolbar 
+// 	.lg-close
+// 		background-image: url('../img/sprite/spritesheet.png')
+// 		background-repeat: no-repeat
+// 		display: inline-block
+// 		background-position: -423px -63px
+// 		width: 50px
+// 		height: 49px
+// 		position: absolute
+// 		top: 125%
+// 		right: 13%
+// 		&:after 
+// 			content: none
+// 	.lg-counter
+// 		display: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.rounded-circle
+	border-radius: 20px !important
+
+.position-relative
+	position: relative
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.text-left
+	text-align: left
+
+.col-offset-1
+	padding-left: 8.3333%
+
+.animation-border
+	animation: pulse-border 1500ms ease-out infinite
+	transition: all 0.3s linear
+
+@keyframes pulse-border 
+	0% 
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+		opacity: 1
+	
+
+	100% 
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.7)
+		opacity: 0
+	

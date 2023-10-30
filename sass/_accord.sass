@@ -1,0 +1,88 @@
+.ba_accord
+	text-align: center
+	padding-top: 70px
+	padding-bottom: 54px
+	.max-width
+		max-width: 925px
+		margin: 0 auto
+		p 
+			font-size: 1.375em
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.36
+			letter-spacing: normal
+			text-align: center
+			max-width: 650px
+			margin: 0 auto
+	.tabs 
+		margin-top: 66px
+		display: flex 
+		justify-content: space-between
+		column-gap: 26px
+		flex-wrap: wrap
+		align-items: flex-start
+	.item 
+		padding: 23px 26px 24px
+		border-radius: 5px
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24)
+		background-color: #fff
+		margin-bottom: 26px
+		outline: none
+		width: calc(50% - 13px)
+		&:hover 
+			cursor: pointer
+			.tab-title 
+				color: #e03173
+		&:last-child
+			margin-bottom: 0
+		&.active 
+			.tab-title 
+				color: $red
+			.tab-content 
+			 	display: block
+			 	margin-top: 14px
+	.tab-title
+		font-size: 1.25em
+		font-weight: 500
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.4
+		letter-spacing: normal
+		color: #333
+		text-align: left
+		display: flex
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		transition: all 0.3s linear
+		&:hover 
+			color: $black
+		.icon-plus
+			font-family: $roboto
+			font-size: 1.75em
+			font-weight: 500
+			font-stretch: normal
+			font-style: normal
+			line-height: 0.89
+			letter-spacing: normal
+			color: $red
+			margin-left: 10px
+		
+	.tab-content
+		display: none
+		text-align: left
+		p 
+			font-family: $roboto
+			font-size: 1.25em
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.4
+			letter-spacing: normal
+			color: $light-green
+			text-align: left
+			strong
+				font-weight: 500
+			&:last-child
+				margin: 0

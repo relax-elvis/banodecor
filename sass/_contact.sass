@@ -1,0 +1,125 @@
+.ba_contact
+	background-image: linear-gradient(to bottom,transparent 0%, transparent 7.7%, #000f30 7.7%,#000f30 92.2%, #000f30 92.2%, transparent 92.2%, transparent 92.2%)
+	.row 
+		align-items: center
+	.col-offset-1
+		padding-left: 7%
+	.contact-form
+		padding: 55px 31px 100px
+		border-radius: 50px
+		// background-image: linear-gradient(to right, #ff0060 0%, #db3775 97%)
+		background-image: linear-gradient(to right, #15357b 0%, rgba(0, 0, 0, 0.91) 97%)
+
+		// background-image: linear-gradient(to right, #27b9a1 0%, #09dda9 97%)
+		
+		position: relative
+		.max-width 
+			max-width: 590px
+			margin: 0 auto
+		// &::after 
+		// 	content: ''
+		// 	background-image: linear-gradient(to right, #27b9a1 0%, #09dda9 97%)
+		// 	border-radius: 0 20px 101px 0
+		// 	display: block
+		// 	width: 135%
+		// 	height: 103.4%
+		// 	position: absolute
+		// 	top: -22px
+		// 	left: -35.1%
+		// 	right: 0
+		// 	bottom: 0
+		// 	z-index: 1
+
+		.position-relative
+			z-index: 2
+
+		.title 
+			font-size: 2.5em
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.13
+			letter-spacing: normal
+			text-align: center
+			color: #ff0161
+			max-width: 75%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 21px
+
+			strong 
+				font-weight: bold
+
+		p 
+			font-size: 1.25em
+			font-weight: 400
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.43
+			letter-spacing: normal
+			text-align: center
+			color: $white
+			margin-bottom: 35px
+
+		form 
+			padding-left: 4px
+
+		&__success
+			.ok
+				margin-top: 50px
+				margin-bottom: 5px
+
+		&__error
+			.error
+				margin-top: 50px
+				margin-bottom: 5px
+
+			.btn-error
+				background: $black
+				color: $white
+				padding: 11px 18px
+
+	&__info 
+		max-width: 310px
+		margin: 0 auto
+		position: relative
+		top: -10px
+		.info-title
+			font-size: 2.5em
+			font-weight: 200
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.13
+			letter-spacing: normal
+			color: $white
+			margin-bottom: 14px
+			strong 
+				font-weight: 600
+
+		p 
+			font-size: 1.25em
+			font-weight: normal
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.44
+			letter-spacing: normal
+			color: $white
+			margin-bottom: 10px
+
+		.phone 
+			.tel 
+				font-size: 1.875em
+				font-weight: 500
+				font-stretch: normal
+				font-style: normal
+				line-height: 1.5
+				letter-spacing: normal
+				color: $red
+				transition: all .3s
+				
+				display: flex 
+				align-items: center
+				&:hover 
+					color: $white
+
+				.icon 
+					margin-right: 18px

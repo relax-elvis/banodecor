@@ -1,0 +1,96 @@
+.ba 
+	&_feedback
+		text-align: center 
+		padding-top: 133px
+		padding-bottom: 129px
+
+		.max-width
+			max-width: 870px
+			margin: 0 auto 
+			h3 
+				&.title 
+					margin-bottom: 15px
+			.title 
+				span 
+					display: block
+			p 
+				font-size: 1.5em
+				line-height: 1.25
+				max-width: 700px
+				margin-left: auto
+				margin-right: auto
+
+		&__slider 
+			margin-top: 59px
+			.slider 
+				display: flex 
+				column-gap: 84px
+				justify-content: space-between
+				@media (max-width: 1200px)
+					&
+						column-gap: 40px
+				.item 
+					width: 33.333%
+					.photo 
+						font-size: 0
+					.content 
+						padding: 20px 20px 29px 25px
+						border-radius: 0 0 5px 5px
+						box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24)
+						background-color: $white
+						.head 
+							.info 
+								display: flex 
+								align-items: center
+								text-align: left
+								.icon 
+									margin-right: 12px
+								.name 
+									font-size: 1.125em
+									font-weight: bold
+									font-stretch: normal
+									font-style: normal
+									line-height: 1.39
+									letter-spacing: normal
+									display: block
+									margin-top: 3px
+								.date 
+									font-size: 1em
+									font-weight: 300
+									font-stretch: normal
+									font-style: normal
+									line-height: 1.56
+									letter-spacing: normal
+									color: #8b8b8b
+							.stars 
+								display: flex
+								column-gap: 4px
+								margin-top: 9px
+
+						.description
+							font-size: 18px
+							font-weight: 300
+							font-stretch: normal
+							font-style: normal
+							line-height: 1.44
+							letter-spacing: normal
+							text-align: left
+							max-height: 108px
+							margin-top: 11px
+							overflow-y: auto
+							&::-webkit-scrollbar
+								width: 4px
+								border-radius: 2px
+							&::-webkit-scrollbar-track
+								box-shadow: inset 0 0 6px #f3f3f3
+							&::-webkit-scrollbar-thumb
+								background-color: #c5c5c5
+								border-radius: 2px
+							
+							p 
+								font-size: 18px
+								font-weight: 300
+								font-stretch: normal
+								font-style: normal
+								line-height: 1.44
+								letter-spacing: normal

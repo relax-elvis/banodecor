@@ -1,0 +1,133 @@
+body 
+	&.post 
+		.block-btn 
+			.btn
+				padding: 8px 5px 6px
+header 
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	width: 100%
+	padding-top: 17px
+	z-index: 9
+	transition: all 0.3s linear
+	margin: 0 auto
+	.row 
+		align-items: center
+	&.has-transform-header,
+	&.hidden
+		transform: translateY(-100%)	
+	&.fixed-menu
+		//background-color: #100d0d
+		background-color: rgba(255, 255, 255, .89)
+		box-shadow: 0 0 3px 0 rgba(135, 135, 135, 0.5)
+		padding-top: 15px
+		padding-bottom: 10px
+		width: 100%
+		.logotype 
+			font-size: 0
+			img 
+				max-width: 68px
+
+		.tel 
+			color: #333
+		.icon-white-phone
+			background-position: -204px -82px
+			
+		.icon-logotype
+			width: 221px
+			background-position: -200px -99px
+		.icon-phone-white
+			background-position: -223px 0
+
+
+		.nav-menu
+			.item 
+				.link 
+					color: #333
+		// .bock-btn
+		// 	.tel 
+		// 		color: $white
+	.mobile
+		display: none
+		.logotype 
+			img 
+				max-width: 55px
+				margin: 0 auto
+		.menu-btn
+			float: right
+	.mobile_block
+		display: none
+		nav 
+			display: flex
+			align-items: center
+			justify-content: flex-end
+		.item 	
+			display: inline-block
+			height: 31.5px
+			&:last-child
+				width: 35px
+				text-align: center
+			.icon-white-phone
+				margin-right: 18px	
+	.nav-menu
+		display: flex 
+		align-items: center
+		column-gap: 26px
+		.item 
+			.link 
+				font-size: 1em
+				font-weight: 400
+				font-stretch: normal
+				font-style: normal
+				line-height: normal
+				letter-spacing: normal
+				color: #fff
+				transition: all .3s
+				&:hover 
+					color: #e03173
+	.logotype 
+		text-align: center	
+	.tel 
+		font-size: 1.125em
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: normal
+		letter-spacing: normal
+		color: #fff
+		display: flex 
+		align-items: center
+		margin-right: 19px
+		transition: all .3s
+		&:hover 
+			color: $red
+		.icon-black-phone
+			margin-right: 8px		
+	.bock-btn
+		display: flex 
+		align-items: center
+		justify-content: flex-end
+		position: relative
+		top: -5px
+		
+		.btn 	
+			font-size: .95em
+			margin-top: 2px
+			transition: all .3s
+			&:hover
+				background-image: linear-gradient(to right,#ff0060 0,#db3775 97%)
+				border: solid 2px transparent
+				color: $white
+
+@media (max-width: 1150px)
+	header 
+		.nav-menu
+			column-gap: 19px
+			.item 
+				.link 
+					font-size: 15px
+
+
+
